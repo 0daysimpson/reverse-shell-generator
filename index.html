@@ -792,7 +792,7 @@
         document.querySelector('#listener-advanced-switch').addEventListener('change', rsg.updateSwitchStates);
         document.querySelector('#revshell-advanced-switch').addEventListener('change', rsg.updateSwitchStates);
 
-        setInterval(rsg.updateSwitchStates, 200) // fix switch changes in rapid succession
+        setInterval(rsg.updateSwitchStates, 500) // fix switch changes in rapid succession
 
         document.querySelector('#copy-listener').addEventListener('click', () => {
             rsg.copyToClipboard(listenerCommand.innerText)
